@@ -8,7 +8,13 @@
 
 This is a modern web-based recreation of the classic 1970s text adventure game, featuring an intuitive grid-based interface, real-time perception system, and strategic gameplay mechanics.
 
-## 🎮 Game Features
+## � Play Now!
+
+**👉 [Play Hunt the Wumpus Online](https://wumpusgames.netlify.app/) 👈**
+
+No installation needed! Click the link above to start playing the game instantly in your browser.
+
+## �🎮 Game Features
 
 ### Gameplay Mechanics
 - **8x8 Grid Cavern**: Navigate through a vast underground cave system
