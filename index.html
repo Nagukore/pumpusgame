@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hunt the Wumpus</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start-screen" class="screen active">
+        <div class="rules-container">
+            <h1>Hunt the Wumpus</h1>
+            <h2>How to Play</h2>
+            <div class="rules-content">
+                <p>Welcome to the cave! Your goal is to find and shoot the fearsome Wumpus.</p>
+                <ul>
+                    <li><strong>Hazards:</strong>
+                        <ul>
+                            <li><span class="hazard pit">Bottomless Pits:</span> You will feel a breeze nearby. Falling in is fatal.</li>
+                            <li><span class="hazard bat">Super Bats:</span> You will hear flapping nearby. They will drop you in a random room.</li>
+                            <li><span class="hazard wumpus">The Wumpus:</span> You will smell a terrible stench nearby. It will eat you!</li>
+                        </ul>
+                    </li>
+                    <li><strong>Controls:</strong>
+                        <ul>
+                            <li><kbd>CTRL</kbd> + <kbd>↑↓←→</kbd> to Move</li>
+                            <li><kbd>ALT</kbd> + <kbd>↑↓←→</kbd> to Shoot (Costs 1 Arrow)</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>You have 5 arrows. If you miss, the Wumpus might move. Good luck!</p>
+            </div>
+            <button id="start-btn" class="btn primary-btn large-btn">Let's Start</button>
+        </div>
+    </div>
+
+    <div id="game-screen" class="screen">
+        <div class="game-container">
+            <header>
+                <h1>Hunt the Wumpus</h1>
+                <div class="stats">
+                    <div class="stat-box">
+                        <span class="label">ARROWS</span>
+                        <span id="arrows-count" class="value">5</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">STATE</span>
+                        <span id="game-state" class="value active">HUNTING</span>
+                    </div>
+                </div>
+            </header>
+            
+            <main>
+                <div id="game-board" class="game-board">
+                    <!-- Grid will be generated here -->
+                </div>
+                
+                <div class="side-panel">
+                    <div class="message-log" id="message-log">
+                        <div class="message system">Welcome to Hunt the Wumpus!</div>
+                        <div class="message system">Explore the cavern, find the wumpus and shoot it with ALT+Arrow keys! Avoid the pits and bats!</div>
+                    </div>
+                    
+                    <div class="controls-guide">
+                        <h3>Controls</h3>
+                        <ul>
+                            <li><kbd>CTRL</kbd> + <kbd>↑↓←→</kbd> Move</li>
+                            <li><kbd>ALT</kbd> + <kbd>↑↓←→</kbd> Shoot</li>
+                        </ul>
+                    </div>
+                    
+                    <button id="restart-btn" class="btn primary-btn">Restart Game</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
